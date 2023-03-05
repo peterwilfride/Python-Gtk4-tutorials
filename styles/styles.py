@@ -59,6 +59,13 @@ class ExampleWindow(Gtk.ApplicationWindow):
         label4.set_vexpand(True)
         vbox.append(label4)
 
+        bullet_char = chr(8226)
+
+        label5 = Gtk.Label.new()
+        label5.set_label(f"this string contain this {bullet_char} unicode character")
+        label5.set_justify(Gtk.Justification.CENTER)
+        label5.set_vexpand(True)
+        vbox.append(label5)
         
 
 class ExampleApplication(Adw.Application):
