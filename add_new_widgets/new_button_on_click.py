@@ -33,7 +33,7 @@ class ExampleWindow(Gtk.ApplicationWindow):
 
         # toggle selection mode
         selecion_mode_button = Gtk.Button.new()
-        selecion_mode_button.set_icon_name(icon_name="document-open-recent-symbolic")
+        selecion_mode_button.set_icon_name(icon_name="emblem-default-symbolic")
         selecion_mode_button.connect("clicked", self.toggle_selecion_mode)
         headerbar.pack_end(child=selecion_mode_button)
 
